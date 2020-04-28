@@ -10,6 +10,7 @@ Python3 を使用していきます。
 
 # チートシート
 競技プログラミングで多用する要素技術を、自分用Wikiとしてまとめます。  
+[cheatsheet.ipynb](https://github.com/potentialPaPa/AtCoder/blob/master/cheatsheat.ipynb) を開けば、誰でも参考にできるようにしています。
 
 # 作者について
 - ポテンシャルパパ
