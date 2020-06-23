@@ -16,8 +16,10 @@ if os.path.exists(filename):
     print("File Already Exists.")
 else:
     import datetime as dt
-    now = dt.datetime.now()
-    today = now.strftime("%B %d, %Y")
+    import pytz
+    now_utc = dt.datetime.now()
+    now_jst = now_utc.astimezone(pytz.timezone('Asia/Tokyo'))
+    today = now_jst.strftime("%B %d, %Y")
     
     sed1 = "sed -e \'s/XXX/" + contest_num + "/g\' "
     sed2 = "-e \'s/TODAY/" + today + "/g\' "
